@@ -53,4 +53,10 @@
 
 ### Используемые технологии:  
 ```Tf-IDF, W2Vec, nltk, GridSearchCV, sklearn, PyTorch, transformers('bert-base-uncased')```
-### Ссылки:  
+### Результат:
+Для тестирования был собран синтетический датасет: из текстов песен известных исполнителей и высказываний в twitter президентов США.  
+Тип выбранных личностей был получен из открытых источников: [Personality-database](https://www.personality-database.com), [Типы личности известных людей](https://boo.world/ru/database/famous-people-personality-types)  
+<hr>
+<img width="955" alt="image" src="https://github.com/lteplova/netology_ds_diplom/assets/38242392/3c3c2691-a5ed-4505-8d27-1febf39f0a72">
+
+﻿
