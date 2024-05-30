@@ -51,7 +51,6 @@
 
 Лучший результат получился при обучении Tf-Idf векторов на 4 типа личности, модель SGDClassifier - выбрана в качестве финальной модели
 
-
-
 ### Используемые технологии:  
+```Tf-IDF, W2Vec, nltk, GridSearchCV, sklearn, PyTorch, transformers('bert-base-uncased')```
 ### Ссылки:  
