@@ -16,7 +16,7 @@
 
 
 ### Данные:  
-Датасет для обучения - [kaggle](https://www.kaggle.com/datasets/datasnaek/mbti-type)
+Датасет для обучения - [kaggle](https://www.kaggle.com/datasets/datasnaek/mbti-type)  
 Я адаптировала классы следующим образом:  
 *Аналитик (тип)*  
 Стратег — INTJ | Ученый — INTP | Полемист — ENTP | Командир — ENTJ   
@@ -34,5 +34,19 @@
 <img width="390" alt="image" src="https://github.com/lteplova/netology_ds_diplom/assets/38242392/dba1f5e9-0a25-4029-9837-e2a1e1b57343">
 
 ### Мое решение:  
+
+Я проверила несколько подходов:
+* Классифческие модели из библиотеки sklearn:
+RandomForestClassifier(n_estimators=100, random_state = 42),
+LogisticRegression(C = 10, max_iter = 100, class_weight='balanced', random_state = 42),
+SGDClassifier(alpha=0.001, loss='log_loss', tol = 0.0004, epsilon=0.01, max_iter=10, class_weight='balanced', learning_rate = 'optimal', shuffle = False, random_state=42),
+SVC(kernel = 'linear', gamma = 'scale', class_weight='balanced', random_state = 42),
+XGBClassifier(n_estimators = 200, max_depth = 2, nthread = 8, learning_rate = 0.2)
+
+* Рекурентную нейройнную сеть GRU
+* Трансформеры Bert
+
+Я проверяла обучение как на 4-х типах, так и на 16 классах
+
 ### Используемые технологии:  
 ### Ссылки:  
