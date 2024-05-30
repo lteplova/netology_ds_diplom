@@ -42,8 +42,8 @@
 ```SGDClassifier(alpha=0.001, loss='log_loss', tol = 0.0004, epsilon=0.01, max_iter=10, class_weight='balanced', learning_rate = 'optimal', shuffle = False, random_state=42),```  
 ```SVC(kernel = 'linear', gamma = 'scale', class_weight='balanced', random_state = 42)```,  
 ```XGBClassifier(n_estimators = 200, max_depth = 2, nthread = 8, learning_rate = 0.2)```  
-* Рекуррентная нейройнную сеть GRU
-* Трансформер Bert
+* Рекуррентная нейройнную сеть ```GRU```
+* Трансформер ```Bert```  
 Метрики: ```Precision``` и ```Accuracy```
 
 <img width="555" alt="image" src="https://github.com/lteplova/netology_ds_diplom/assets/38242392/e8b7eb28-7fbd-4f5a-879a-6579075c8b07">
