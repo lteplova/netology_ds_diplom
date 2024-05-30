@@ -35,18 +35,23 @@
 
 ### Мое решение:  
 
-Я проверила несколько подходов:
-* Классифческие модели из библиотеки sklearn:
+В ходе решения были протестированы несколько различных подходов (обучение проводилось как на 4-х типах, так и на 16 классах):
+* Классические модели из библиотеки sklearn:
 RandomForestClassifier(n_estimators=100, random_state = 42),
 LogisticRegression(C = 10, max_iter = 100, class_weight='balanced', random_state = 42),
 SGDClassifier(alpha=0.001, loss='log_loss', tol = 0.0004, epsilon=0.01, max_iter=10, class_weight='balanced', learning_rate = 'optimal', shuffle = False, random_state=42),
 SVC(kernel = 'linear', gamma = 'scale', class_weight='balanced', random_state = 42),
 XGBClassifier(n_estimators = 200, max_depth = 2, nthread = 8, learning_rate = 0.2)
+* Рекуррентная нейройнную сеть GRU
+* Трансформер Bert
+Метрики: 'Precision' и 'Accuracy'
 
-* Рекурентную нейройнную сеть GRU
-* Трансформеры Bert
+<img width="555" alt="image" src="https://github.com/lteplova/netology_ds_diplom/assets/38242392/e8b7eb28-7fbd-4f5a-879a-6579075c8b07">
+<img width="480" alt="image" src="https://github.com/lteplova/netology_ds_diplom/assets/38242392/448d4a5d-0e39-4854-a72e-dba4b77cc645">
 
-Я проверяла обучение как на 4-х типах, так и на 16 классах
+Лучший результат получился при обучении Tf-Idf векторов на 4 типа личности, модель SGDClassifier - выбрана в качестве финальной модели
+
+
 
 ### Используемые технологии:  
 ### Ссылки:  
